@@ -1,5 +1,5 @@
 function data2json(filename, data)
-%FUNCTION DATA2JSON(data)
+%FUNCTION DATA2JSON(FILENAME,DATA)
 %
 %   Desc: 
 %       Convert a data array to JSON.
