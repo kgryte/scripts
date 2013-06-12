@@ -87,22 +87,14 @@ for i = 1 : size(data,1)
         
     if size(data,2) == 2
         
-        json = [json, '{"x":', num2str(data(i,1)), ',"y":[', str, ']}' ];
-        
-        if i < size(data,1)
-            json = [json, ',' ];
-        end % end IF
+        json = [json, '{"x":', num2str(data(i,1)), ',"y":[', str, ']},' ];
         
     else
         % Make the y-value entries comma delimited:
         yVals = regexprep(strtrim(str), '  +', ',');
         
         % Append to our JSON:
-        json = [json, '{"x":', num2str(data(i,1)), ',"y":[', yVals, ']}' ];
-        
-        if i < size(data,1)
-            json = [json, ',' ];
-        end % end IF
+        json = [json, '{"x":', num2str(data(i,1)), ',"y":[', yVals, ']},' ];
         
     end % end IF/ELSE
     
