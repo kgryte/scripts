@@ -211,7 +211,7 @@ methods(Access = 'public')
         %
         %   Parameters:
         %       map: the map to be tested.
-        %       key: the mkey to be tested.
+        %       key: the key to be tested.
         % 
         %   Output:
         %       Output is a logical: True/False. True: map and key are
